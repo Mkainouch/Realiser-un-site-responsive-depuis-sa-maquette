@@ -8,7 +8,7 @@
 }
 body{
     font-family: 'Open Sans' , 'sans serif';
-    background-color: #E2EAF0;
+    background-color: white;
 }
 .whiteSpace{
     height: 100px;
@@ -149,7 +149,7 @@ header{
 .couver{
     height: 90vh;
     width: 100%;
-    background-color: black;
+    background-color:black;
     opacity: .7;
 }
 .arrow span{
@@ -207,17 +207,6 @@ header{
     position: absolute;
     top: 31%;
     right: 11px;
-}
-@keyframes animate {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
 }
 @media screen and (max-width: 1085px) {
     .div4_last a img {
@@ -277,24 +266,83 @@ header{
 }
 /* ================================================================================================================ */
 /* ====================================================== section ================================================= */
+/* _______________________________________ */
+.all{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    width: 800px;
+    justify-content: right;
+}
+.right{
+    display: flex;
+    width: 800px;
+    justify-content: left;
+}
+.all img{
+    width: 100%;
+    border-radius: 6px;
+    margin: 4px;
+}
+.div1{
+    width: 49%;
+    margin: 4px;}
+.div2{
+    width: 49%;
+    margin: 4px;}
+.div3{
+    width: 49%;
+    margin: 4px;}
+.div4{
+    width: 49%;
+    margin: 4px;}
+.image1{height: 470px}
+.image2{height: 260px}
+.image3{height: 360px}
+.image4{height: 480px}
+.image5{height: 900px}
+.image6{height: 300px}
+.image7{height: 500px}
+.image8{height: 700px}
+
+@media screen and (min-width:810px){
+    
+}
+/* __________________________________ */
+.discriptionContainer{
+    padding:48px 12% 16px 0%;
+    margin: 0 48px;
+}
 .discription{
     display: flex;
     width: 100%;
-    margin:0 12% 16px 12%;
     align-content: center;
+    justify-content: center;
 }
 .discription h3{
-    width: 16%;
+    width: 30%;
     font-size: 56px;
-    color: #688095;
+    color:#688095;
 }
 .discription p{
     width: 50%;
+    color: #04151F;
+    font-size: 24px;
 }
 .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.imgContainer{
+    text-align: center;
+    margin: 0 9%; 
+    background-color: #E2EAF0;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, .2);
 }
 .gallery img{
     height: 300px;
@@ -383,6 +431,72 @@ visibility: visible;
 }
 .lastSec .lastSec_content form i{
     margin-right: 10px;
+}
+@media screen and (max-width:1860px){
+    .imgContainer{
+        margin: 0 7%; 
+    }
+}
+@media screen and (max-width:1780px){
+    .imgContainer{
+        margin: 0 5%; 
+    }
+}
+
+@media screen and (max-width:1010px){
+    .gallery img{
+        height: 400px;
+        width: 700px;
+    }
+    #imgs{
+        height: 70%;
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:1270px){
+    .gallery img{
+        height: 400px;
+        width: 70%;
+    }
+    .discriptionContainer{
+        padding:16px 3%;
+    }
+    .discription{
+        display: block;
+    }
+    .discription h3{
+        width: 90%;   
+        text-align: center;  
+    }
+    .discription p{
+        width: 90%;
+        text-align: center;
+    }
+    #imgs{
+        margin:5% auto;
+        height: 80%;
+        width: 70%;
+        border: 2px solid black;
+        background-image: url(../img/img1.jpg);
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width:767px){
+    .gallery img{
+        height: 300px;
+        width: 500px;
+    }
+    .gallery img:hover{
+        filter:none;
+        transform: none;
+    }
+}
+@media screen and (max-width:490px){
+    .gallery img{
+        height: 250px;
+        width: 100%;
+    }
 }
 /* ================================================================================================================== */
 /* ======================================================== footer ================================================== */
